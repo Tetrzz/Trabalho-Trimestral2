@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALTIS — Aviação Executiva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="trabalhos.css">
+</head>
+<body>
+
+<input class="visually-hidden" type="radio" name="screen" id="screen-splash" checked>
+<input class="visually-hidden" type="radio" name="screen" id="screen-home">
+<input class="visually-hidden" type="radio" name="screen" id="screen-buscar">
+<input class="visually-hidden" type="radio" name="screen" id="screen-resultados">
+<input class="visually-hidden" type="radio" name="screen" id="screen-detalhe">
+<input class="visually-hidden" type="radio" name="screen" id="screen-confirmada">
+<input class="visually-hidden" type="radio" name="screen" id="screen-perfil">
+
+<header class="site-header">
+  <div class="header-container">
+    <label for="screen-home" class="brand">
+      <span class="mark">ALTIS</span>
+      <span class="sub">Aviação Executiva</span>
+    </label>
+    <nav class="desktop-nav">
+      <label for="screen-home" class="nav-link">Início</label>
+      <label for="screen-buscar" class="nav-link">Nova Viagem</label>
+      <label for="screen-resultados" class="nav-link">Reservas</label>
+      <label for="screen-perfil" class="nav-link">Perfil</label>
+    </nav>
+  </div>
+</header>
+
+<main class="site-main">
+  
+  <section class="frame" id="frame-splash">
+    <div class="splash-content">
+      <div class="eyebrow">Aviação Executiva Privada</div>
+      <h1 class="display main-title">ALTIS</h1>
+      <p class="subtitle">Sua próxima decisão de voo, resolvida em minutos.</p>
+      <div class="action-group">
+        <label class="btn" for="screen-home">Entrar no Sistema</label>
+        <label class="btn-text" for="screen-home">Usar número de membro</label>
+      </div>
+      <div class="badge">MEMBRO TITÂNIO · ACESSO CONTÍNUO</div>
+    </div>
+  </section>
+
+  <section class="frame" id="frame-home">
+    <div class="screen-body">
+      <div class="welcome-row">
+        <div>
+          <div class="welcome-text">Bom dia</div>
+          <div class="display user-name">Ricardo Albuquerque</div>
+        </div>
+        <label for="screen-perfil" class="avatar">RA</label>
+      </div>
+
+      <div class="eyebrow section-label">Próximo voo</div>
+      <label class="flight-strip" for="screen-confirmada">
+        <div class="fs-route">
+          <div class="fs-codes">CGH <span class="arrow">→</span> SDU</div>
+          <div class="fs-meta">Hoje · Embarque 18:40 · Gulfstream G650ER</div>
+        </div>
+        <div class="fs-right">
+          <div class="fs-status"><span class="dot"></span><span class="status-text">Confirmado</span></div>
+        </div>
+      </label>
+
+      <div class="divider"></div>
+
+      <div class="home-actions">
+        <label class="btn" for="screen-buscar">+ Nova viagem</label>
+        <div class="btn-grid">
+          <div class="btn btn-ghost">Repetir última rota</div>
+          <div class="btn btn-ghost">Solicitar cotação</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="eyebrow section-label">Acesso rápido</div>
+      <div class="pref-row"><span class="k">Aeroporto padrão</span><span>Congonhas (CGH)</span></div>
+      <div class="pref-row"><span class="k">Assistente pessoal</span><span>Fernanda M.</span></div>
+    </div>
+  </section>
+
+  <section class="frame" id="frame-buscar">
+    <div class="top-nav">
+      <label class="back" for="screen-home">← Voltar</label>
+      <div class="display page-title">Nova viagem</div>
+    </div>
+    <div class="screen-body">
+      <div class="form-grid">
+        <div class="field"><div class="fl">Origem</div><div class="fv">Congonhas — CGH, São Paulo</div></div>
+        <div class="field"><div class="fl">Destino</div><div class="fv">Santos Dumont — SDU, Rio de Janeiro</div></div>
+        <div class="field-row">
+          <div class="field"><div class="fl">Data</div><div class="fv">Hoje</div></div>
+          <div class="field"><div class="fl">Horário</div><div class="fv">18:40</div></div>
+        </div>
+        <div class="field"><div class="fl">Passageiros</div><div class="fv">2 adultos</div></div>
+      </div>
+
+      <div class="eyebrow section-label">Categoria de aeronave</div>
+      <div class="chip-row">
+        <div class="chip">Light</div>
+        <div class="chip">Midsize</div>
+        <div class="chip selected">Super Midsize</div>
+        <div class="chip">Heavy</div>
+        <div class="chip">Ultra Long Range</div>
+      </div>
+
+      <div class="form-action">
+        <label class="btn" for="screen-resultados">Buscar aeronaves disponíveis</label>
+      </div>
+    </div>
+  </section>
+
+  <section class="frame" id="frame-resultados">
+    <div class="top-nav">
+      <label class="back" for="screen-buscar">← Voltar</label>
+      <div class="display page-title">3 aeronaves disponíveis</div>
+    </div>
+    <div class="screen-body">
+      <div class="sub-info">CGH → SDU · Hoje</div>
+      <div class="results-list">
+        <label class="flight-strip" for="screen-detalhe">
+          <div class="fs-route">
+            <div class="fs-codes">EMB-PRT600</div>
+            <div class="fs-meta">Decolagem em 47 min · 8 lugares</div>
+          </div>
+          <div class="fs-right">
+            <div class="fs-price">R$ 68.400</div>
+            <div class="fs-status"><span class="dot"></span><span class="status-text">Disponível</span></div>
+          </div>
+        </label>
+        <label class="flight-strip" for="screen-detalhe">
+          <div class="fs-route">
+            <div class="fs-codes">CL-350</div>
+            <div class="fs-meta">Decolagem em 1h10 · 9 lugares</div>
+          </div>
+          <div class="fs-right">
+            <div class="fs-price">R$ 71.900</div>
+            <div class="fs-status"><span class="dot"></span><span class="status-text">Disponível</span></div>
+          </div>
+        </label>
+        <label class="flight-strip" for="screen-detalhe">
+          <div class="fs-route">
+            <div class="fs-codes">G650ER</div>
+            <div class="fs-meta">Decolagem em 1h40 · 14 lugares</div>
+          </div>
+          <div class="fs-right">
+            <div class="fs-price">R$ 94.200</div>
+            <div class="fs-status"><span class="dot"></span><span class="status-text">Disponível</span></div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <section class="frame" id="frame-detalhe">
+    <div class="top-nav">
+      <label class="back" for="screen-resultados">← Voltar</label>
+      <div class="display page-title">Gulfstream G650ER</div>
+    </div>
+    <div class="screen-body">
+      <div class="aircraft-hero">Silhueta da aeronave</div>
+      <div class="stat-row">
+        <div class="stat"><div class="v">14.500 km</div><div class="l">Alcance</div></div>
+        <div class="stat"><div class="v">Mach .925</div><div class="l">Velocidade</div></div>
+        <div class="stat"><div class="v">14</div><div class="l">Lugares</div></div>
+      </div>
+      
+      <div class="eyebrow section-label">Incluso na reserva</div>
+      <div class="amenity-grid">
+        <div class="amenity"><span class="ic">◆</span>Wi-Fi de alta velocidade a bordo</div>
+        <div class="amenity"><span class="ic">◆</span>Catering personalizado</div>
+        <div class="amenity"><span class="ic">◆</span>Cabine com privacidade total</div>
+        <div class="amenity"><span class="ic">◆</span>Motorista até o hangar incluso</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="price-breakdown">
+        <div class="pref-row"><span class="k">Tarifa da aeronave</span><span>R$ 89.000</span></div>
+        <div class="pref-row"><span class="k">Taxas de aeroporto</span><span>R$ 5.200</span></div>
+        <div class="pref-row"><span class="k">Total</span><span class="total-price">R$ 94.200</span></div>
+      </div>
+
+      <div class="form-action">
+        <label class="btn" for="screen-confirmada">Confirmar reserva</label>
+      </div>
+    </div>
+  </section>
+
+  <section class="frame" id="frame-confirmada">
+    <div class="top-nav">
+      <label class="back" for="screen-home">← Voltar ao início</label>
+      <div class="display page-title">Reserva confirmada</div>
+    </div>
+    <div class="screen-body">
+      <div class="ticket">
+        <div class="ticket-header">
+          <div class="fs-codes large">CGH <span class="arrow">→</span> SDU</div>
+          <div class="fs-status"><span class="dot"></span><span class="status-text">Confirmado</span></div>
+        </div>
+        <div class="ticket-sub">Gulfstream G650ER · PR-ALT</div>
+        <div class="divider"></div>
+        <div class="stat-row">
+          <div class="stat"><div class="v">18:40</div><div class="l">Embarque</div></div>
+          <div class="stat"><div class="v">Hangar 3</div><div class="l">Local</div></div>
+        </div>
+        <div class="qr"></div>
+        <div class="ticket-code">ALT-88291-RA</div>
+      </div>
+      <p class="ticket-info">Motorista particular incluso até o hangar. Fernanda M. confirmará os detalhes por mensagem.</p>
+      <div class="form-action">
+        <label class="btn" for="screen-home">Voltar ao início</label>
+      </div>
+    </div>
+  </section>
+
+  <section class="frame" id="frame-perfil">
+    <div class="screen-body">
+      <div class="profile-header">
+        <div class="avatar large">RA</div>
+        <div class="display user-name">Ricardo Albuquerque</div>
+        <div class="eyebrow">Membro Titânio</div>
+      </div>
+
+      <div class="eyebrow section-label">Preferências</div>
+      <div class="pref-row"><span class="k">Aeroporto padrão</span><span>Congonhas (CGH)</span></div>
+      <div class="pref-row"><span class="k">Catering preferido</span><span>Cozinha contemporânea</span></div>
+      <div class="pref-row"><span class="k">Assistente pessoal</span><span>Fernanda M.</span></div>
+
+      <div class="eyebrow section-label">Histórico recente</div>
+      <div class="history-list">
+        <div class="flight-strip">
+          <div class="fs-route"><div class="fs-codes">CGH <span class="arrow">→</span> KTEB</div><div class="fs-meta">12 jul · G650ER</div></div>
+          <div class="fs-right"><div class="fs-price">Concluído</div></div>
+        </div>
+        <div class="flight-strip">
+          <div class="fs-route"><div class="fs-codes">GRU <span class="arrow">→</span> LFPB</div><div class="fs-meta">02 jun · Global 7500</div></div>
+          <div class="fs-right"><div class="fs-price">Concluído</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<nav class="bottom-nav">
+  <label class="nav-item nav-home" for="screen-home"><span class="ic">●</span>Início</label>
+  <label class="nav-item nav-resultados" for="screen-resultados"><span class="ic">✈</span>Reservas</label>
+  <label class="nav-item nav-perfil" for="screen-perfil"><span class="ic">◐</span>Perfil</label>
+</nav>
+
+</body>
+</html>
